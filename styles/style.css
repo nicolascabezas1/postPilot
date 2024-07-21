@@ -2,10 +2,13 @@
 
 :root {
     --text-color: #2E2F35;
+    --text-secondary-color: #58595D;
     --orange-color: #FF6D2C;
     --white-color: #ffffff;
     --bg-main-color: #E0F8F2;
+    --strong-color: #009387;
 }
+
 html {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
@@ -17,6 +20,33 @@ html {
     box-sizing: inherit;
 }
 
+h1 {
+    margin: 0;
+    color: #2E2F35;
+    font-size: 5.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6rem;
+}
+
+p {
+    margin: 0;
+    color: var(--text-secondary-color);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.125rem;
+}
+
+strong {
+    color: var(--strong-color);
+    font-family: "Covered By Your Grace", serif;
+    font-size: 5.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6rem;
+}
+
 .a-non-text-decoration {
     text-decoration: none;
     color: var(--text-color);
@@ -26,6 +56,7 @@ html {
     margin: 4.69rem;
     display: flex;
     justify-content: space-between;
+    margin-bottom: -0.625rem;
 }
 
 .main-nav {
@@ -64,5 +95,27 @@ html {
 }
 
 .principal-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 4.6875rem;
+    height: 100vh;
     background: var(--bg-main-color);
+}
+
+.article-products {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.quality-stars {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: flex-start;
+}
+
+.navigation {
+    flex-direction: column;
+    align-items: center;
 }
