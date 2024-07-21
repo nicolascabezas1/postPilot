@@ -3,7 +3,8 @@
 :root {
     --text-color: #2E2F35;
     --orange-color: #FF6D2C;
-    --white-color: #ffffff
+    --white-color: #ffffff;
+    --bg-main-color: #E0F8F2;
 }
 html {
     box-sizing: border-box;
@@ -60,4 +61,8 @@ html {
 .secondary-bottom {
     background: var(--orange-color);
     color: var(--white-color);
+}
+
+.principal-container {
+    background: var(--bg-main-color);
 }
