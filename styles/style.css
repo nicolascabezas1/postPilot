@@ -1,9 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --text-color: #2E2F35;
+    --orange-color: #FF6D2C;
+    --white-color: #ffffff
+}
 html {
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 *,
 *::after,
 *::before {
     box-sizing: inherit;
+}
+
+.a-non-text-decoration {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.main-header {
+    margin: 4.69rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.19rem;
+    align-items: center;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.66rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.style-general-bottom {
+    padding: 0.875rem 1.36525rem 0.75rem 1.375rem;
+    border-radius: 0.75rem;
+    box-shadow: 3px 3px 0 0 var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.primary-button {
+    background: var(--white-color);
+}
+
+.secondary-bottom {
+    background: var(--orange-color);
+    color: var(--white-color);
 }
